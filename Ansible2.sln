@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ansible.Test2", "ConsoleApp1\Ansible.Test2.csproj", "{15E288D1-A656-41FE-87B6-B0A40F7D3A54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ansible.Test2", "ConsoleApp1\Ansible.Test2.csproj", "{15E288D1-A656-41FE-87B6-B0A40F7D3A54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{A14EB8E0-4125-47DB-A62B-CD578F9EAFA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{15E288D1-A656-41FE-87B6-B0A40F7D3A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15E288D1-A656-41FE-87B6-B0A40F7D3A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15E288D1-A656-41FE-87B6-B0A40F7D3A54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A14EB8E0-4125-47DB-A62B-CD578F9EAFA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A14EB8E0-4125-47DB-A62B-CD578F9EAFA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A14EB8E0-4125-47DB-A62B-CD578F9EAFA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A14EB8E0-4125-47DB-A62B-CD578F9EAFA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

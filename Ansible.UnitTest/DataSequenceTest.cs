@@ -20,10 +20,10 @@ namespace Ansible.UnitTest
                     actual++;
             }
 
-            //var result = 27;
-            var result = sequence.Count( x => x % 3 == 0 && !( x % 3 == 0 && x % 5 == 0 ) );
+            //var expected = 27;
+            var expected = sequence.Count( x => x % 3 == 0 && !( x % 3 == 0 && x % 5 == 0 ) );
 
-            Assert.True(actual == result, $"There shoud be { result } 'Ansible' items in range ({sequence.Min(x => x)}, {sequence.Max(x => x)})");
+            Assert.True(actual == expected, $"Actual: { actual }. Expected { expected }x 'Ansible' items in sequence ({sequence.Min(x => x)} to {sequence.Max(x => x)})");
         }
 
         [Fact]
@@ -37,10 +37,10 @@ namespace Ansible.UnitTest
                     actual++;
             }
 
-            //var result = 14;
-            var result = sequence.Count(x => x % 5 == 0 && !(x % 3 == 0 && x % 5 == 0));
+            //var expected = 14;
+            var expected = sequence.Count(x => x % 5 == 0 && !(x % 3 == 0 && x % 5 == 0));
 
-            Assert.True(actual == result, $"There shoud be { result } 'Australia' items in range ({sequence.Min(x => x)}, {sequence.Max(x => x)})");
+            Assert.True(actual == expected, $"Actual: { actual }. Expected { expected }x 'Australia' items in sequence ({sequence.Min(x => x)} to {sequence.Max(x => x)})");
         }
 
         [Fact]
@@ -54,10 +54,10 @@ namespace Ansible.UnitTest
                     actual++;
             }
 
-            //var result = 6;
-            var result = sequence.Count(x => x % 3 == 0 && x % 5 == 0);
+            //var expected = 6;
+            var expected = sequence.Count(x => x % 3 == 0 && x % 5 == 0);
 
-            Assert.True(actual == result, $"There shoud be { result } 'Ansible Australia' items in range ({sequence.Min(x => x)}, {sequence.Max(x => x)})");
+            Assert.True(actual == expected, $"Actual: { actual }. Expected { expected }x 'Ansible Australia' items in sequence ({sequence.Min(x => x)} to {sequence.Max(x => x)})");
         }
     }
 }
